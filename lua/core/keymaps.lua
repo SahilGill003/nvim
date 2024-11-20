@@ -1,16 +1,5 @@
 vim.g.mapleader = " "
 
-vim.g.clipboard = {
-	name = "xsel",
-	copy = {
-		["+"] = "xsel --nodetach -ib",
-	},
-	paste = {
-		["+"] = "xsel -ob",
-	},
-	cache_enabled = true,
-}
-
 vim.keymap.set("n", "<leader>L", "<cmd>Lazy<CR>", { noremap = true, silent = true })
 -- Shorten function name
 local keymap = vim.keymap.set
@@ -49,6 +38,8 @@ keymap("n", "<esc>", "<cmd>noh<cr>", opts)
 keymap("v", "p", '"_dP', opts)
 keymap("n", "x", '"_x', opts)
 keymap("n", "X", '"_X', opts)
+keymap("n", "<leader>P", '"*p', opts)
+keymap("v", "<leader>y", '"*y', opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
