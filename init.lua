@@ -1,9 +1,3 @@
-if vim.g.vscode then
-  print("VSCode Extension")
-else
-  print("Ordinary Neovim")
-end
-
 vim.lsp.set_log_level("off")
 require("core.options")
 require("core.keymaps")
