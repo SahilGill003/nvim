@@ -1,7 +1,7 @@
 if vim.g.vscode then
-	print("VSCode Extension")
+  print("VSCode Extension")
 else
-	print("Ordinary Neovim")
+  print("Ordinary Neovim")
 end
 
 vim.lsp.set_log_level("off")
@@ -11,6 +11,8 @@ require("lazy-setup")
 require("core.autocommands")
 vim.o.background = "light"
 vim.cmd([[colorscheme tokyonight-night]])
+vim.cmd([[set autochdir]])
+vim.cmd([[Copilot disable]])
 -- vim.cmd([[:hi SignColumn guibg=None]])
 -- vim.cmd([[:hi Comment guifg=#7a7a7a]])
 

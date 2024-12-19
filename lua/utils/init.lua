@@ -4,14 +4,12 @@ M.servers = {
 	"cssls",
 	"html",
 	"ts_ls",
-	"eslint",
 	"bashls",
-	"jsonls",
-	"yamlls",
 	"tailwindcss",
 	"emmet_ls",
 	"ruff",
 	"cmake",
+	"lua_ls",
 }
 
 M.lservers = {
@@ -19,6 +17,7 @@ M.lservers = {
 	"clangd",
 	"pyright",
 	"rust_analyzer",
+	"gopls",
 }
 
 M.linters = {

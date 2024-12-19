@@ -58,7 +58,7 @@ keymap("n", "<leader>x", "<cmd>bdelete<CR>")
 keymap("n", "<leader>h", vim.cmd.nohlsearch, opts)
 
 -- Netrw File Explorer
-keymap("n", "<leader>.", "<cmd>Oil<CR>", opts)
+keymap("n", "<leader>.", "<cmd>Sex<CR>", opts)
 
 -- Make current file executable
 keymap("n", "<leader><leader>x", "<cmd>!chmod +x %<cr>")
@@ -81,5 +81,3 @@ keymap("n", "<A-w>", "<C-w>w")
 
 -- Set quickfixlist (insert diagnostic) --
 keymap("n", "<leader>qs", vim.diagnostic.setqflist)
-
-------------- Renaming a file -------------
